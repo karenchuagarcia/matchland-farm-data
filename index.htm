@@ -29,8 +29,8 @@ tr:nth-child(even) {
     <table id="mytable" class="display" cellspacing="0" width="100%">
       <thead>
         <tr>
-          <th>World - Stage</th>
           <th>Food</th>
+          <th>World - Stage</th>
           <th>Count</th>
         </tr>
       </thead>
@@ -49,10 +49,10 @@ $(document).ready(function() {
     cache: false
   }).done(function(data) {
     $.each(data, function (i, v) {
-      var s = ""
-      s = '<td>' + v[0] + ' ' + v[2] + '</td>' +
-        '<td data-search="' + v[1] +'" data-order="' + v[1] + '">' + v[1] + "</td>" +
+      var s = '<td data-search="' + v[1] +'" data-order="' + v[1] + '">' + v[1] + "</td>" +
+        '<td>' + v[0] + ' ' + v[2] + '</td>' +
         '<td data-order="' + v[3] + '">' + v[3] + "</td>";
+
       $("#mytable tbody").append('<tr>' + s + '</tr>');
     });
 
