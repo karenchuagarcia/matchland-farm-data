@@ -4,7 +4,7 @@ var filesToCache = [
   'dataset.'+version+'.js',
 
   'index.htm',
-  'man.js',
+  'manifest.js',
   'service-worker.js',
 
   'asset/bootstrap.min.css',
