@@ -1,5 +1,5 @@
 {
-  "short_name": "MatchFarm",
+  "short_name": "Matchfarm",
   "name": "Matchland Farming Data Tool",
   "display": "standalone",
   "start_url": "index.htm",

@@ -1,0 +1,28 @@
+CACHE MANIFEST
+# Cache manifest version 32017.7.12
+# If you change the version number in this comment,
+# the cache manifest is no longer byte-for-byte
+# identical.
+
+dataset.20170712.js
+
+index.htm
+manifest.js
+service-worker.js
+
+asset/bootstrap.min.css
+asset/bootstrap.min.css.map
+asset/jquery.dataTables.min.css
+asset/jquery-1.12.4.min.js
+asset/dataTables.bootstrap.min.js
+asset/jquery.dataTables.min.js
+
+icon/favicon.png
+icon/icon-57x57.jpg
+icon/icon-72x72.jpg
+icon/icon-114x114.jpg
+icon/icon-144x144.jpg
+
+images/sort_both.png
+images/sort_asc.png
+images/sort_desc.png
