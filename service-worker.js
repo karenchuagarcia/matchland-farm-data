@@ -1,5 +1,5 @@
 var version = '20170712';
-var cacheName = 'matchland-farm-odc-1' + version;
+var cacheName = 'matchland-farm-odc-3' + version;
 var filesToCache = [
   'dataset.'+version+'.js',
 
@@ -8,6 +8,7 @@ var filesToCache = [
   'service-worker.js',
 
   'asset/bootstrap.min.css',
+  'asset/bootstrap.min.css.map',
   'asset/jquery.dataTables.min.css',
   'asset/jquery-1.12.4.min.js',
   'asset/dataTables.bootstrap.min.js',

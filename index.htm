@@ -1,14 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html manifest="ios-webcache.manifest">
 <head>
   <title>Matchland Farm Data</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-title" content="Matchfarm" />
+<meta name="apple-mobile-web-app-capable" content="tes" />
 <script type="text/javascript">
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker
     .register('service-worker.js')
     .then(function() { console.log('Service Worker Registered'); });
 }
+
+if ('applicationCache' in window) {
+  console.log("starting Application Cache...");
+  window.applicationCache.addEventListener('updateready', function (event) {
+      window.applicationCache.swapCache();
+  }, false);
+
+  function logEvent(event) {
+       console.log(event.type);
+   }
+
+   window.applicationCache.addEventListener('checking',logEvent,false);
+   window.applicationCache.addEventListener('noupdate',logEvent,false);
+   window.applicationCache.addEventListener('downloading',logEvent,false);
+   window.applicationCache.addEventListener('cached',logEvent,false);
+   window.applicationCache.addEventListener('updateready',logEvent,false);
+   window.applicationCache.addEventListener('obsolete',logEvent,false);
+   window.applicationCache.addEventListener('error',logEvent,false);
+}
+
 </script>
 <link rel="manifest" href="manifest.js">
 <link rel="icon" type="image/png" href="icon/favicon.png">
