@@ -1,5 +1,5 @@
-var version = '20170712';
-var cacheName = 'matchland-farm-odc-3' + version;
+var version = '20170720';
+var cacheName = 'matchland-farm-odc-' + version;
 var filesToCache = [
   'dataset.'+version+'.js',
 
