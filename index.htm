@@ -40,6 +40,7 @@ if ('applicationCache' in window) {
 <link rel="apple-touch-icon" sizes="144x144" href="icon/icon-144x144.jpg" />
 <link rel="stylesheet" href="asset/bootstrap.min.css">
 <link rel="stylesheet" href="asset/jquery.dataTables.min.css">
+<link rel="stylesheet" href="asset/datatablestyle.css">
 <script src="asset/jquery-1.12.4.min.js"></script>
 <script src="asset/jquery.dataTables.min.js"></script>
 <script src="asset/dataTables.bootstrap.min.js"></script>
@@ -91,7 +92,7 @@ tr:nth-child(even) {
 
   $(document).ready(function() {
     $.ajax({
-      url: "dataset.20170712.js",
+      url: "dataset.20170728.js",
       dataType: "json",
       cache: true
     }).done(popTable);
